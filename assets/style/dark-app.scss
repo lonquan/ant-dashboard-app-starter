@@ -1,0 +1,69 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --header-bg-color: #2F2F2F;
+    --nav-bg-color: #2F2F2F;
+    --main-bg-color: #2F2F2F;
+    --nav-hover-bg-color: #4f4f4f;
+    --body-bg-color: #222222;
+    --font-color: rgba(255, 255, 255, .8);
+    --border-color: #585858;
+  }
+
+  .el-loading-mask {
+    background-color: var(--nav-hover-bg-color);
+  }
+
+  .el-form-item {
+    .el-form-item__label, .el-input__inner {
+      color: var(--font-color);
+    }
+  }
+
+  .el-input__inner {
+    color: var(--font-color);
+    background-color: var(--main-bg-color);
+    border-color: var(--border-color);
+  }
+
+  // card
+  .el-card {
+    background-color: var(--main-bg-color);
+    color: var(--font-color);
+    border-color: var(--border-color);
+
+    .el-card__header {
+      border-bottom-color: var(--border-color);
+    }
+  }
+
+  // 分页
+  .el-pagination {
+    button:disabled, .btn-prev, .btn-next {
+      background-color: var(--main-bg-color);
+    }
+
+    .el-pager li {
+      background-color: var(--main-bg-color);
+    }
+  }
+
+  // 表格
+  .el-table {
+    background-color: var(--main-bg-color);
+
+    th, tr {
+      background-color: var(--main-bg-color);
+    }
+
+    &.el-table--striped .el-table__body tr.el-table__row--striped td {
+      background-color: var(--body-bg-color);
+    }
+
+    .el-table__body tr.hover-row > td,
+    .el-table__body tr.hover-row.current-row > td,
+    .el-table__body tr.hover-row.el-table__row--striped > td,
+    .el-table__body tr.hover-row.el-table__row--striped.current-row > td {
+      background-color: var(--body-bg-color);
+    }
+  }
+}
